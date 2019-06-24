@@ -1,8 +1,5 @@
 const fs = require('fs')
-var fsPromise = function(){
-
-}
-
+var fsPromise = function(){}
 fsPromise.prototype.read = function(fic){
     return new Promise(function(resolve,reject){
         fs.readFile(fic,'utf8', (err, data) => {
